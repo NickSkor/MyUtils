@@ -1,7 +1,7 @@
 package writeRestResponse;
 
 public interface APIGeneralReport {
-	//1  - GEMINI
+	//1  - GEMINI -
 	String GEMINI_SYMBOLS = "https://api.sandbox.gemini.com/v1/symbols";
 
 	//2  - BITFINEX
