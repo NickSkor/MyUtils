@@ -1,9 +1,9 @@
-package htmlEditor;
+package editorHtml;
 
 
-import htmlEditor.listeners.FrameListener;
-import htmlEditor.listeners.TabbedPaneChangeListener;
-import htmlEditor.listeners.UndoListener;
+import editorHtml.listeners.FrameListener;
+import editorHtml.listeners.TabbedPaneChangeListener;
+import editorHtml.listeners.UndoListener;
 
 import javax.swing.*;
 import javax.swing.undo.UndoManager;

@@ -1,9 +1,9 @@
-package htmlEditor;
+package editorHtml;
 
 
-import htmlEditor.actions.*;
-import htmlEditor.listeners.TextEditMenuListener;
-import htmlEditor.listeners.UndoMenuListener;
+import editorHtml.actions.*;
+import editorHtml.listeners.TextEditMenuListener;
+import editorHtml.listeners.UndoMenuListener;
 
 import javax.swing.*;
 import javax.swing.text.DefaultEditorKit;

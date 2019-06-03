@@ -1,8 +1,8 @@
-package htmlEditor.listeners;
+package editorHtml.listeners;
 
 
 
-import htmlEditor.View;
+import editorHtml.View;
 
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;

@@ -1,7 +1,7 @@
-package htmlEditor.listeners;
+package editorHtml.listeners;
 
 
-import htmlEditor.View;
+import editorHtml.View;
 
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;

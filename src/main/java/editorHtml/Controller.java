@@ -1,4 +1,4 @@
-package htmlEditor;
+package editorHtml;
 
 import javax.swing.*;
 import javax.swing.text.html.HTMLDocument;

@@ -1,4 +1,4 @@
-package htmlEditor;
+package editorHtml;
 
 public class ExceptionHandler {
 	public static void log(Exception e) {
