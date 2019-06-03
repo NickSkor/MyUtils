@@ -16,7 +16,7 @@ public class Controller {
 
 	public HTMLDocument getDocument() {
 		return document;
-	} //
+	} ////
 
 	public void setDocument(HTMLDocument document) {
 		this.document = document;
