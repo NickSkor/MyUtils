@@ -41,7 +41,6 @@ public class ResponeInfo {
 		funcResponse(APIGeneralReport.COINBASE_ASSETS, "Coinbase_Assets", rootDirectory, dataReport);
 		funcResponse(APIGeneralReport.COINBASE_SYMBOLS, "Coinbase_Symbols", rootDirectory, dataReport);
 		funcResponse(APIGeneralReport.OKEX_SYMBOLS, "OKEx_Symbols", rootDirectory, dataReport);
-		//funcResponse(APIGeneralReport.OKEX_FUTURES, "OKEx_Futures", rootDirectory, dataReport);
 		funcResponse(APIGeneralReport.GATE_SYMBOLS, "Gate_Symbols", rootDirectory, dataReport);
 		funcResponse(APIGeneralReport.GATE_SYMBOLS_DETAIL, "Gate_SymbolsDetail", rootDirectory, dataReport);
 		funcResponse(APIGeneralReport.BITMEX_SYMBOLS, "Bitmex_Symbols", rootDirectory, dataReport);
@@ -55,13 +54,12 @@ public class ResponeInfo {
 		funcResponse(APIGeneralReport.BEQUANT_SYMBOLS, "Bequant_Symbols", rootDirectory, dataReport);
 		funcResponse(APIGeneralReport.YOBIT_SYMBOLS, "Yobit_Symbols", rootDirectory, dataReport);
 
-		ZipOutputStream zout = new ZipOutputStream(new FileOutputStream("zipArchive_"+dataReport));
+		ZipOutputStream zout = new ZipOutputStream(new FileOutputStream("zipArchive_" + dataReport));
 
-		addToArchive(zout,rootDirectory);
+		addToArchive(zout, rootDirectory);
 
 		zout.close();
 	}
-
 
 
 	public void funcResponse(String url, String nameFile, Path derictory, String dataStr) throws IOException {
@@ -95,19 +93,6 @@ public class ResponeInfo {
 					}
 				}
 			}
-		}
-	}
-
-	private void addNewZipEntry(ZipOutputStream zipOutputStream, Path filePath, Path fileName) throws Exception {
-		Path fullPath = filePath.resolve(fileName);
-		try (InputStream inputStream = Files.newInputStream(fullPath)) {
-			ZipEntry entry = new ZipEntry(fileName.toString());
-
-			zipOutputStream.putNextEntry(entry);
-
-			copyData(inputStream, zipOutputStream);
-
-			zipOutputStream.closeEntry();
 		}
 	}
 
